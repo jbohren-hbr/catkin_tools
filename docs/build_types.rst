@@ -54,6 +54,17 @@ Build Stages
 CMake
 ^^^^^
 
+A plain CMake package can be built with ``catkin build`` automatically if it
+contains a ``package.xml`` with the ``<build_type>`` tag designating it a plain
+CMake package:
+
+.. code-block:: xml
+
+    <export>
+        <build_type>cmake</build_type>
+    </export>
+
+
 Configuration Arguments
 -----------------------
 
